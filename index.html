@@ -3,8 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="U">
+         Статистика платформы
+    </div>
+    <br>
+    <div class="card">
+        <div class="U">Общая статистика</div>
+
+        <div class="Bob">
+            <div>
+                <div class="q">
+                    8.45 млрд руб
+                </div>
+                <div class="w">
+                    выдано займов бизнесу
+                </div>
+            </div>
+            <div>
+                <div class="e">
+                    31
+                </div>
+                <div class="r">
+                    выдано займов за апрель
+                </div>
+            </div>
+            <div>
+                <div class="t">
+                    5399
+                </div>
+                <div class="y">
+                    активных инвесторов на пратформе
+                </div>
+            </div>
+            <div>
+                <div class="u">
+                    2457
+                </div>
+                <div class="i">
+                    активных заемщиков на платформе
+                </div>
+            </div>
+            <div>
+                <div class="T">
+                    0.49 %
+                    <div class="Q">?</div>
+                    <div class="Lol">i</div>
+                </div>
+                <div class="o">
+                    уровень дефолтности по займам
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <div class="W">
+        <div class="Vidannie_zaimi_biznecu card" >
+            <div>
+                Выданные займы бизнесу
+            </div>
+            <div class="V">
+                <button id="week" onclick="chench('НЕДЕЛЯ', 'week')">НЕДЕЛЯ</button>
+                <button id="month" onclick="chench('МЕСЯЦ', 'month')">МЕСЯЦ</button>
+                <button id="quart" onclick="chench('КВАРТАЛ', 'quart')">КВАРТАЛ</button>
+                <button id="year" class="button-active" onclick="chench('ЗА ГОД', 'year')">ЗА ГОД</button>
+                <button id="allTime" onclick="chench('ВСЕ ВРЕМЯ', 'allTime')">ВСЕ ВРЕМЯ</button>
+            </div>
+
+            <div class="Z"></div>
+
+        </div>
+
+        <div class="Struktura_vidannif_zaimov card">
+
+            <div>
+                Структура выданных займов
+            </div>
+
+            <div class="X"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="index.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,144 @@
+.card {
+    padding: 16px;
+    box-shadow: 0 2px 10px black;
+    border-radius: 12px;
+}
+.Vidannie_zaimi_biznecu {
+    padding: 16px;
+    height: 670px;
+    width: 1277px;
+    margin-right: 23px;
+}
+.Struktura_vidannif_zaimov {
+    padding: 16px;
+    height: 670px;
+    width: 700px;
+
+}
+.Bob {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Bob > div {
+    width: 100%;
+    padding: 10px;
+    border-right: 1px solid grey;
+}
+
+.Q {
+    color: #6a5c5c;
+    font-size: 18px;
+    width: 7px;
+    height: 15px;
+    border-radius: 18px;
+    background-color: #ffffff;
+    padding: 1px 5px 1px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #6a5c5c;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.Lol {
+    color: white;
+    font-size: 18px;
+    width: 12px;
+    height: 20px;
+    border-radius: 18px;
+    background-color: #3642ec;
+    padding: 1px 5px 1px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.T {
+    display: flex;
+    margin-left: 120px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.W {
+    display: flex;
+    font-size: 25px;
+}
+
+.U {
+    font-size: 25px;
+}
+
+.V button {
+    background-color: transparent;
+    border: none;
+    margin: 25px;
+}
+
+.V button:hover {
+    cursor: pointer;
+    color: cornflowerblue;
+}
+
+.V button.button-active {
+    color: cornflowerblue;
+}
+
+.Z {
+    height: 525px;
+    width: 1200px;
+}
+
+.X {
+    height: 480px;
+    width: 480px;
+    margin-left: 70px;
+    margin-top: 25px;
+}
+
+.q {
+    margin-left: 100px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.w {
+    margin-left: 93px;
+}
+
+.e {
+    margin-left: 175px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.r {
+    margin-left: 99px;
+}
+
+.t {
+    margin-left: 150px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.y {
+    margin-left: 60px;
+}
+
+.u {
+    margin-left: 150px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.i {
+    margin-left: 60px;
+}
+
+.o {
+    margin-left: 65px;
+}
