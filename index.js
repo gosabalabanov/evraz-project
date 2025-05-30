@@ -532,3 +532,15 @@ function chench(period, targetId) {
         chart1.updateOptions(options1)
     }
 }
+
+document.getElementById('info').addEventListener('click',openPopup)
+document.getElementById('X').addEventListener('click',closePopup)
+
+function openPopup() {
+    let popup = document.querySelector('.popup');
+    popup.classList.add('open');
+}
+function closePopup() {
+    let popup = document.querySelector('.popup');
+    popup.classList.remove('open');
+}
