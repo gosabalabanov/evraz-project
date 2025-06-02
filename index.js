@@ -100,7 +100,18 @@ var options1 = {
         opposite: true,
         labels: {
             formatter: function (value) {
-                return (+value / 1_000_000_000)+ ' млрд' ;
+                if (+value > 1_000_000_000) {
+                    return (+value / 1_000_000_000).toFixed(2) + ' млрд' ;
+                }
+                else if (+value > 1_000_000) {
+                    return (+value / 1_000_000).toFixed(2) + ' млн' ;
+                }
+                else if (+value > 1_000) {
+                    return (+value / 1_000).toFixed(2) + ' тыс' ;
+                }
+                else {
+                    return +value.toFixed(2);
+                }
             }
         }
     },
@@ -363,7 +374,7 @@ function chench(period, targetId) {
             }
         ]
 
-        options1.xaxis.categories = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31']
+        options1.xaxis.categories = ['1 апреля', '2 апреля', '3 апреля', '4 апреля', '5 апреля', '6 апреля', '7 апреля', '8 апреля', '9 апреля', '10 апреля', '11 апреля', '12 апреля', '13 апреля', '14 апреля', '15 апреля', '16 апреля', '17 апреля', '18 апреля', '19 апреля', '20 апреля', '21 апреля', '22 апреля', '23 апреля', '24 апреля', '25 апреля', '26 апреля', '27 апреля', '28 апреля', '29 апреля', '30 апреля', '31 апреля']
         chart1.updateOptions(options1)
     }
     if (period === 'КВАРТАЛ') {
@@ -538,9 +549,13 @@ document.getElementById('X').addEventListener('click',closePopup)
 
 function openPopup() {
     let popup = document.querySelector('.popup');
+    let begraund = document.querySelector('.AA');
     popup.classList.add('open');
+    begraund.classList.add('open');
 }
 function closePopup() {
     let popup = document.querySelector('.popup');
+    let begraund = document.querySelector('.AA');
     popup.classList.remove('open');
+    begraund.classList.remove('open');
 }
